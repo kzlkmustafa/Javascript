@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="type/html; charset=utf-8">
+
+<title>variable transfer</title>
+
+</head>
+
+<body>
+	<script type="text/javascript" language="javascript">
+		
+		var	name = "Mustafa ";
+		var surname = "Kızılkaya ";
+		
+		var meName = name; //variable transfer result => name and meName = Mustafa (both)
+		
+		document.write(meName);
+		
+		var me = name+surname; // two variable transfer
+		
+		document.write(me);
+		
+		var number1 = "1"; //string
+		var number2 = "2"; //string
+		
+		var	result1 = number1+number2; // this result => 12 because variables(n1,n2) string
+		document.write(result1);
+		
+		var number3 = 1 ; // numeric
+		var number4 = 2 ; // numeric
+		
+		var result2 = number3+number4; // this result => 3 because variables(n3,n4) numeric
+		document.write(result2);
+		
+		//if two different value structures are transferred they are written side by side.
+		
+	</script>
+</body>
+</html>

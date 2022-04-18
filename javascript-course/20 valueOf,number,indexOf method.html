@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="type/html; charset=utf-8">
+
+<title>innerHTML</title>
+
+</head>
+
+<body>
+	<script type="text/javascript" language="javascript">
+		
+		//The Number() method converts a value to a number.
+		
+		var content1	= true;
+		var content2	= false;
+		var content3	= "8";
+		var content4	= "8.45";
+		var content5	= new Date();
+		
+		document.write(typeof(content1)+ " ; " + content1+ "<br/>");
+		document.write(typeof(content2)+ " ; " + content2+ "<br/>");
+		document.write(typeof(content3)+ " ; " + content3+ "<br/>");
+		document.write(typeof(content4)+ " ; " + content4+ "<br/>");
+		document.write(typeof(content5)+ " ; " + content5+ "<br/>" + "<br/>" + "<br/>");
+
+		
+		var resulta = Number(content1);
+		var resultb = Number(content2);
+		var resultc = Number(content3);
+		var resultd = Number(content4);
+		var resulte = Number(content5);
+		
+		document.write(typeof(resulta)+ " ; " + resulta+ "<br/>");
+		document.write(typeof(resultb)+ " ; " + resultb+ "<br/>");
+		document.write(typeof(resultc)+ " ; " + resultc+ "<br/>");
+		document.write(typeof(resultd)+ " ; " + resultd+ "<br/>");
+		document.write(typeof(resulte)+ " ; " + resulte+ "<br/>" + "<br/>" + "<br/>");
+		
+		
+		//The valueOf() method returns the primitive value of a string.
+		
+		var value1	= "5";
+		document.write(typeof(value1)+ " ; "+ value1+ "<br/>");
+		
+		var result1	= value1.valueOf();
+		document.write(typeof(result1)+ "<br/>");
+		
+		var value1	= 5;
+		document.write(typeof(value1)+ " ; "+ value1+ "<br/>");
+		
+		var result1	= value1.valueOf();
+		document.write(typeof(result1)+ "<br/>"+ "<br/>"+ "<br/>");
+		
+		//The indexOf() method returns the position of the first occurrence of a value in a string.
+		
+		var text1 = "Mustafa Kızılkaya javascript course";
+		document.write(text1 + "<br/>");
+		
+		var result1 = text1.indexOf("course");
+		document.write(result1+ "<br/>");
+		
+		var result1 = text1.indexOf("a",6);
+		document.write(result1+ "<br/>");
+		
+		
+	</script>
+</body>
+</html>

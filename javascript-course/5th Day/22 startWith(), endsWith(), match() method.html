@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="type/html; charset=utf-8">
+
+<title>innerHTML</title>
+
+</head>
+
+<body>
+	<script type="text/javascript" language="javascript">
+		//The startsWith() method returns true if a string starts with a specified string.Otherwise it returns false.
+		//The endsWith() method returns true if a string ends with a specified string.Otherwise it returns false.
+		
+		var text1 = "Hello passenger, welcome to the universe."
+		document.write(text1 + "<br/>");
+		
+		var result1 = text1.startsWith("Hell"); // :D
+		document.write(result1 + "<br/>");
+		
+		var result2 = text1.endsWith("erse");
+		document.write(result2 + "<br/>");
+		
+		//The match() method matches a string against a regular expression ** The match() method returns an array with the matches. The match() method returns null if no match is found.
+		
+		var text2 = "The rain in SPAIN stays mainly in the plain";
+		document.write(text2 + "<br/>");
+		
+		var result3 = text2.match("ain"); //A seach for "ain" using a string:
+		document.write(result3 + "<br/>");
+		
+		var result4 = text2.match(/ain/); //A seach for "ain" using a regular expression:
+		document.write(result4 + "<br/>");
+		
+		var result5 = text2.match(/ain/g); //A global seach for "ain":
+		document.write(result5 + "<br/>");
+		
+		var result6 = text2.match(/ain/gi); //A global, case-insensitive search:
+		document.write(result6 + "<br/>");
+	
+	
+	</script>
+</body>
+</html>

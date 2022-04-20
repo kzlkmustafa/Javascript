@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="type/html; charset=utf-8">
+
+<title>innerHTML</title>
+
+</head>
+
+<body>
+	<script type="text/javascript" language="javascript">
+		//The lastIndexOf() method returns the index (position) of the last occurrence of a specified value in a string.
+		
+		var text1 = "Mustafa Kızılkaya Javascript course";
+		document.write(text1 + "<br/>");
+		
+		var result1 = text1.lastIndexOf("kaya");
+		document.write(result1 + "<br/>");
+		
+		
+		//The search() method matches a string against a regular expression **
+		//The search() method returns the index (position) of the first match.
+		
+		var text2 = "Mustafa Kızılkaya is learning javascript";
+		document.write(text2 + "<br/>");
+		
+		var result2 = text2.search("is");
+		document.write(result2 + "<br/>");
+		
+		var result3 = text2.search(/KAYA/i);
+		document.write(result3+ "<br/>");
+		
+		
+		//The includes() method returns true if a string contains a specified string. Otherwise it returns false.
+		var text3 = "Hello passanger, welcome to the universe.";
+		document.write(text3 + "<br/>");
+		
+		var result4 = text3.includes("pas");
+		document.write(result4 + "<br/>");
+		
+		
+	</script>
+</body>
+</html>

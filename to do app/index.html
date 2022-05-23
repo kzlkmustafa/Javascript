@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Görev Listesi</title>
+  </head>
+  <body>
+    <div class="container p3">
+        <h1 class="app-title" id="header">Görev Listesi</h1>
+        <div class="card">
+            <div class="card-header">
+                Yeni Görev
+            </div>
+            <div class="card-body">
+                <form id="addTaskForm">
+                    <input id="txtTaskName" type="text" class="form-control" placeholder="yeni görev ekleme">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary float-end mt-2" type="submit" id="btnAddNewTask">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-square" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                              </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-header">
+                Görev Listesi
+                <a id="btnDeleteAll" href="#" class="btn btn-outline-danger btn-sm-delete-all float-end">
+                    Hepsini Sil
+                </a>
+            </div>
+            <ul id="task-list" class="list-group">
+                
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
